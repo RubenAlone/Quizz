@@ -1,0 +1,34 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset='utf-8'>
+<meta name="author" content="Rubén Méndez Pérez">
+<link rel="stylesheet" th:href="@{/css/bootstrap.css}">
+<meta name="viewport" content="width=device=width">
+</head>
+<h1>JUEGO DEL QUIZZ</h1>
+<form th:action="@{/segunda}" method="POST">
+	<fieldset>
+        <legend>
+            Juego del Calamar
+        </legend>
+        Figura: <b th:text=${figura_form}></b><br />
+        <p>
+        SEGUNDA PREGUNTA
+        </p>
+        <p>Elige una figura</p>
+        
+        <p>
+            <input type="radio" name="figura" value="">Círculo<br />
+            <input type="radio" name="figura" value="">Triángulo<br />
+            <input type="radio" name="figura" value="">Estrella<br />
+            <input type="radio" name="figura" value="">Paraguas<br />
+        </p>
+
+     	<p>¿Los datos son correctos?</p>
+        	<input type="submit" name="enviar">
+        	<input type="reset" name="reset" value="Borrar formulario">
+    </fieldset>
+</form>
+</body>
+<footer>Rubén Méndez Pérez · DWES · 21/22</footer>
+</html>
