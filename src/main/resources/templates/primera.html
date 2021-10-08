@@ -1,36 +1,58 @@
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
-<meta charset='utf-8'>
-<meta name="author" content="Rubén Méndez Pérez">
-<link rel="stylesheet" th:href="@{/css/bootstrap.css}">
-<meta name="viewport" content="width=device=width">
-</head>
-<body>
-<h1>JUEGO DEL QUIZZ</h1>
-<form th:action="@{/primera}" method="POST">
-	<fieldset>
-        <legend>
-            Juego del Calamar
-        </legend>
-        <div>
-        
-        </div>
-        <p>
-        PRIMERA PREGUNTA
-        </p>
-        <p>Elige una figura</p>
-        <p>
-            <input type="radio" name="figura" value="circulo">Círculo
-            <input type="radio" name="figura" value="triangulo">Triángulo
-            <input type="radio" name="figura" value="estrella">Estrella
-            <input type="radio" name="figura" value="paraguas">Paraguas<br />
-        </p>
 
-     	<p>¿Los datos son correctos?</p>
-        	<input type="submit" name="enviar">
-        	<input type="reset" name="reset" value="Borrar formulario">
-    </fieldset>
-</form>
+<head>
+	<meta charset='utf-8'>
+	<meta name="author" content="Rubén Méndez Pérez">
+	<link rel="stylesheet" th:href="@{/css/bootstrap.css}">
+	<meta name="viewport" content="width=device=width">
+</head>
+
+<body>
+	<div align="center">
+		<img th:src="@{images/calamar01.jpg}">
+	</div>
+	<div align="center">
+		<h1>JUEGO DEL QUIZZ</h1>
+		<form th:action="@{/primera}" method="POST">
+			<fieldset>
+				<legend>
+					Juego del Calamar
+				</legend>
+				<p>1ª PREGUNTA</p>
+				<p>Elige una figura</p>
+				<p>
+					<input type="radio" name="figura" value="circulo">Círculo
+					<input type="radio" name="figura" value="triangulo">Triángulo
+					<input type="radio" name="figura" value="estrella">Estrella
+					<input type="radio" name="figura" value="paraguas">Paraguas<br />
+				</p>
+
+				<p>¿Los datos son correctos?</p>
+				<input type="submit" name="enviar">
+				<input type="reset" name="reset" value="Borrar formulario">
+			</fieldset>
+		</form>
+	</div>
+	<!--
+	<div>
+		<form th:action="@{/persistMessage}" method="post">
+			<textarea name="msg" cols="40" rows="2"></textarea>
+			<br> <input type="submit" value="Save Message" />
+		</form>
+	</div>
+	<div>
+		<h2>Messages</h2>
+		<ul th:each="message : ${sessionMessages}">
+			<li th:text="${message}">msg</li>
+		</ul>
+	</div>
+	<div>
+		<form th:action="@{/destroy}" method="post">
+			<input type="submit" value="Destroy Session" />
+		</form>
+	</div>
+	-->
 </body>
 <footer>Rubén Méndez Pérez · DWES · 21/22</footer>
+
 </html>

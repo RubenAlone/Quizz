@@ -9,22 +9,19 @@
 
 <body>
 	<div align="center">
-		<img th:src="@{images/calamar02.jpg}">
+		<img th:src="@{images/calamar01.jpg}">
 	</div>
 	<div align="center">
 		<h1>JUEGO DEL QUIZZ</h1>
-		<form th:action="@{/segunda}" method="POST">
+		<form th:action="@{/resultado}" method="POST">
 			<fieldset>
 				<legend>
 					Juego del Calamar
 				</legend>
-				<p>2ª PREGUNTA</p>
+				<p>RESULTADO DEL QUIZZ</p>
 				<p>Elige una figura</p>
 				<p>
-					<input type="radio" name="color" value="azul">Azul
-					<input type="radio" name="color" value="rojo">Rojo
-					<input type="radio" name="color" value="verde">Verde
-					<input type="radio" name="color" value="amarillo">Amarillo<br />
+					Mostrar resultado
 				</p>
 
 				<p>¿Los datos son correctos?</p>
