@@ -19,9 +19,9 @@ public class QuizzController {
 	}
 
 	@RequestMapping(value = "/primera", method = RequestMethod.POST)
-	public String primera_post(Model modelo, @RequestParam String figura, HttpSession httpSession) {
+	public String primera_post(Model modelo, @RequestParam String msg, HttpSession httpSession) {
 
-		httpSession.setAttribute("pregunta1", figura);
+		httpSession.setAttribute("pregunta1", msg);
 
 		return "redirect:/segunda";
 	}
@@ -106,6 +106,6 @@ public class QuizzController {
 
 }
 
-//Controlador para guardar las respuestas en la sesión.
+
 
 
