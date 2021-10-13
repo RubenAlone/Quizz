@@ -9,20 +9,23 @@
 
 <body>
 	<div align="center">
-		<img th:src="@{images/calamar02.jpg}">
+		<img th:src="@{images/sailor02.jpg}" width="600 px">
 	</div>
 	<div align="center">
-		<h1>Sailor Scouts</h1>
+		<h2>Sailor Moon</h2>
 		<form th:action="@{/segunda}" method="POST">
 			<fieldset>
 				<legend>¿Qué Sailor Scouts eres?</legend>
 				<p>2ª PREGUNTA</p>
 				<p>Elige una color</p>
 				<p>
-					<input type="radio" name="color" value="azul">Azul<br />
-					<input type="radio" name="color" value="rojo">Rojo<br />
-					<input type="radio" name="color" value="verde">Verde<br />
-					<input type="radio" name="color" value="amarillo">Amarillo<br />
+					<input type="radio" name="color" value="azul"> Azul 
+					<input type="radio" name="color" value="rojo"> Rojo 
+					<input type="radio" name="color" value="verde"> Verde 
+					<input type="radio" name="color" value="rosa"> Rosa 
+					<input type="radio" name="color" value="naranja"> Naranja 
+					<input type="radio" name="color" value="morado"> Morado 
+					<input type="radio" name="color" value="amarillo"> Amarillo <br />
 				</p>
 
 				<p>¿Los datos son correctos?</p>
@@ -32,6 +35,5 @@
 		</form>
 	</div>
 </body>
-<footer>Rubén Méndez Pérez · DWES · 21/22</footer>
-
+<footer align="center">Rubén Méndez Pérez · DWES · 21/22</footer>
 </html>

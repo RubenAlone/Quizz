@@ -45,10 +45,21 @@ public class QuizzController {
 	}
 
 	@RequestMapping(value = "/tercera", method = RequestMethod.POST)
-	public String tercera_post(Model modelo, @RequestParam String figura, HttpSession httpSession) {
+	public String tercera_post(Model modelo, 
+			@RequestParam String aficion1, 
+			@RequestParam String aficion2,
+			@RequestParam String aficion3,
+			@RequestParam String aficion4,
+			@RequestParam String aficion5,
+			@RequestParam String aficion6,
+			HttpSession httpSession) {
 
-		httpSession.setAttribute("pregunta3", figura);
-
+		httpSession.setAttribute("pregunta3", aficion1);
+		httpSession.setAttribute("pregunta3", aficion2);
+		httpSession.setAttribute("pregunta3", aficion3);
+		httpSession.setAttribute("pregunta3", aficion4);
+		httpSession.setAttribute("pregunta3", aficion5);
+		httpSession.setAttribute("pregunta3", aficion6);
 		return "redirect:/cuarta";
 	}
 
@@ -105,6 +116,8 @@ public class QuizzController {
 	}
 
 }
+
+
 
 
 

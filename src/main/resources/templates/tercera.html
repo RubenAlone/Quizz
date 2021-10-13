@@ -9,32 +9,24 @@
 
 <body>
 	<div align="center">
-		<img th:src="@{images/calamar03.jpg}">
+		<img th:src="@{images/sailor03.jpg}" width="600 px">
 	</div>
 	<div align="center">
-		<h1>JUEGO DEL QUIZZ</h1>
+		<h2>Sailor Moon</h2>
 		<form th:action="@{/tercera}" method="POST">
 			<fieldset>
-				<legend>
-					Juego del Calamar
-				</legend>
+				<legend>¿Qué Sailor Scouts eres?</legend>
 				<p>3ª PREGUNTA</p>
-				<p>Elige una figura</p>
+				<p>Elige tus aficiones</p>
 				<p>
-					<label>
-						<input type="checkbox" id="cbox1" value="first_checkbox"> Este es mi primer
-						checkbox</label><br>
+					<input type="checkbox" name="aficion1" value="uno"> Lectura
+					<input type="checkbox" name="aficion2" value="dos"> Videojuegos
+					<input type="checkbox" name="aficion3" value="tres"> Cocina<br>
+					<input type="checkbox" name="aficion4" value="cuatro"> Coches
+					<input type="checkbox" name="aficion5" value="cinco"> Shopping
+					<input type="checkbox" name="aficion6" value="seis"> Música<br>
 
-					<input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2">Este es mi segundo
-						checkbox
-					</label>
-
-					<input type="radio" name="figura" value="circulo">Círculo
-					<input type="radio" name="figura" value="triangulo">Triángulo
-					<input type="radio" name="figura" value="estrella">Estrella
-					<input type="radio" name="figura" value="paraguas">Paraguas<br />
 				</p>
-
 				<p>¿Los datos son correctos?</p>
 				<input type="submit" name="enviar">
 				<input type="reset" name="reset" value="Borrar formulario">
@@ -42,6 +34,6 @@
 		</form>
 	</div>
 </body>
-<footer>Rubén Méndez Pérez · DWES · 21/22</footer>
+<footer align="center">Rubén Méndez Pérez · DWES · 21/22</footer>
 
 </html>
